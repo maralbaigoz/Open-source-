@@ -1,13 +1,10 @@
 name: CI
 
-on:
-  push:
-    branches: [ "main" ]
+on: [push]
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Run test
-        run: echo "Test passed"
+    - name: Run a one-line script
+      run: echo "Hello, world from my first CI pipeline!"
